@@ -1,0 +1,35 @@
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+subject = input("What subject do you like? ").strip().lower()
+
+print("\n--- Profile ---")
+print("Name:", name)
+print("Age:", age)
+
+# Age category
+if age < 13:
+    print("Category: Kid 👶")
+
+elif age < 18:
+    print("Category: Teenager 🧑‍🎓")
+
+else:
+    print("Category: Adult 🧑‍💼")
+
+# Subject category
+print("Subject:", subject)
+
+if subject == "maths":
+    print("Logic Brain 🧠")
+
+elif subject == "physics":
+    print("Future Engineer 🔧")
+
+elif subject == "chemistry":
+    print("Future Scientist 🔬")
+
+elif subject == "computer science":
+    print("Future Coder 💻")
+
+else:
+    print("Keep exploring 🔥")
